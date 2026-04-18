@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Design System - Car Luxe */
+  --color-background: #09090b;
+  --color-foreground: #F0EDE8;
+  
+  --color-bg-primary: #09090b;
+  --color-bg-secondary: #121214;
+  --color-bg-surface: #18181b;
+  --color-bg-border: #27272a;
+  
+  --color-gold-main: #C9A84C;
+  --color-gold-light: #E2BF6A;
+  --color-gold-dark: #8C7030;
+  
+  --color-primary: var(--color-gold-main);
+  --color-primary-foreground: #09090b;
+  
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #52525b;
+
+  --gradient-brand: linear-gradient(135deg, #C9A84C 0%, #E2BF6A 50%, #8C7030 100%);
+  
+  --radius-lg: 1rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-full: 9999px;
+  
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    @apply border-bg-border;
+  }
+  
+  body {
+    @apply bg-background text-text-primary antialiased selection:bg-gold-main selection:text-bg-primary;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Performance Optimizations */
+  .framer-motion-gpu {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A84C;
+}
