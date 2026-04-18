@@ -1,16 +1,39 @@
-# React + Vite
+# 🛡️ CAR LUXE — Estética Automotiva Premium
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O mais alto padrão em estética automotiva, agora com tecnologia de elite. Este projeto é a interface oficial da **Car Luxe**, focada em proporcionar uma experiência de luxo desde o primeiro clique até o agendamento final.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias de Elite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto utiliza uma stack moderna para garantir performance e visual de altíssimo nível:
 
-## React Compiler
+- **React + Vite**: Fundação ultra-veloz para uma experiência fluida.
+- **Supabase**: Backend robusto para gestão de agendamentos e leads em tempo real.
+- **Tailwind CSS**: Design system customizado com estética dark mode absoluta.
+- **Framer Motion**: Animações suaves e interações premium.
+- **React Three Fiber**: Visualização 3D imersiva para apresentação de serviços.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Estrutura do Projeto
 
-## Expanding the ESLint configuration
+O site é dividido em módulos de alta fidelidade:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Showroom Imersivo**: Visualização técnica do catálogo.
+- **Calculadora Inteligente**: Orçamentos baseados no porte do veículo.
+- **Agendamento Online**: Sincronização direta com o banco de dados.
+- **Galeria de Projetos**: Exibição dos resultados de elite.
+
+## ⚙️ Configuração de Desenvolvimento
+
+Para rodar o projeto localmente:
+
+1. Clone o repositório.
+2. Instale as dependências: `npm install`.
+3. Configure o arquivo `.env.local` com suas credenciais do Supabase.
+4. Inicie o servidor: `npm run dev`.
+
+## 📦 Deploy
+
+O projeto está configurado para deploy contínuo no **Netlify**. Certifique-se de configurar as variáveis de ambiente `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` no painel de controle do Netlify.
+
+---
+
+*Desenvolvido com foco na perfeição. Car Luxe — Transformando veículos em obras de arte.*
